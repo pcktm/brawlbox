@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/textures/DarkOverlay.png" type="Texture" id=1]
+[ext_resource path="res://assets/textures/MenuBackground.png" type="Texture" id=2]
+[ext_resource path="res://scripts/ParallaxBackground.gd" type="Script" id=3]
+[ext_resource path="res://scripts/MainMenu.gd" type="Script" id=4]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 319.722, 178.022 )
+scale = Vector2( 0.431724, 0.431724 )
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+strength = 25
+
+[node name="DarkOverlay" type="Sprite" parent="."]
+position = Vector2( -3.36929, 0 )
+scale = Vector2( 1.01228, 1 )
+texture = ExtResource( 1 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
